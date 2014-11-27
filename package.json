@@ -4,15 +4,15 @@
   "description": "Quick example of server rendering with React",
   "main": "index.js",
   "dependencies": {
-    "express": "~3.4.6",
-    "react": "http://petehunt.net/react/react-0.5.1.tar.gz"
+    "express": "~4.10.4",
+    "react": "0.12.1"
   },
   "devDependencies": {
-    "browserify": "~2.36.0",
-    "envify": "~0.2.0",
-    "reactify": "~0.4.0",
+    "browserify": "~6.3.3",
+    "envify": "~3.2.0",
+    "reactify": "~0.17.1",
     "uglifyjs": "~2.3.6",
-    "watchify": "~0.4.1"
+    "watchify": "~2.1.1"
   },
   "scripts": {
     "start": "watchify -o browser-bundle.js -d .",
