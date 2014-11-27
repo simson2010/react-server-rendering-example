@@ -1,5 +1,3 @@
-/** @jsx React.DOM */
-
 // Simulate long JS load time
 setTimeout(function() {
   var React = require('react');
