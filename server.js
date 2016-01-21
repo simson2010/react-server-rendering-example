@@ -1,6 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 var React = require('react');
+var ReactDOMServer = require('react-dom/server');
 var Timer = React.createFactory(require('./Timer'));
 
 var PLACEHOLDER = 'If you see this then something is wrong.';
@@ -11,7 +12,7 @@ var app = express();
 
 function index_html(req, res) {
     // You could use JSX here; doesn't matter.
-    markup = React.renderToString(Timer());
+    markup = ReactDOMServer.renderToString(Timer());
     res.send(TEMPLATE.replace(PLACEHOLDER, markup));
 }
 
